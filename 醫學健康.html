@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>醫療健康表單</title>
+</head>
+<body>
+  <h1>醫療健康評估表單</h1>
+
+  <form id="healthForm">
+    <h2>個人基本資料</h2>
+    <label>姓名：<input type="text" name="name" id="name" placeholder="請輸入您的姓名"></label><br>
+    <label>年齡：<input type="number" name="age" id="age" placeholder="請輸入您的年齡"></label><br>
+    <label>性別：</label>
+    <label><input type="radio" name="gender" value="male"> 男</label>
+    <label><input type="radio" name="gender" value="female"> 女</label>
+
+    <h2>健康狀況</h2>
+    <label>身高 (cm)：<input type="number" name="height" id="height" placeholder="請輸入您的身高"></label><br>
+    <label>體重 (kg)：<input type="number" name="weight" id="weight" placeholder="請輸入您的體重"></label><br>
+    <label>過敏史：<textarea name="allergies" id="allergies" rows="3" placeholder="請描述您的過敏史"></textarea></label><br>
+
+    <h2>基本健康狀況</h2>
+    <label>您目前的健康狀況如何？</label><br>
+    <label><input type="radio" name="healthStatus" value="veryGood"> 非常好</label>
+    <label><input type="radio" name="healthStatus" value="good"> 良好</label>
+    <label><input type="radio" name="healthStatus" value="average"> 一般</label>
+    <label><input type="radio" name="healthStatus" value="notGood"> 不太好</label>
+    <label><input type="radio" name="healthStatus" value="poor"> 很差</label><br>
+
+    <label>您是否曾經患過重大疾病或慢性病？</label>
+    <label><input type="radio" name="majorIllness" value="yes"> 是</label>
+    <label><input type="radio" name="majorIllness" value="no"> 否</label><br>
+
+    <label>您最近是否有過任何不尋常的健康問題？</label><br>
+    <input type="text" name="unusualHealthIssues" id="unusualHealthIssues" placeholder="例如：頭痛、胸痛、呼吸困難等"><br>
+
+    <h2>病史與家族病史</h2>
+    <label>您過去是否有以下健康問題？（列舉疾病：高血壓、糖尿病、心臟病等）</label><br>
+    <textarea name="pastHealthIssues" id="pastHealthIssues" rows="3" placeholder="請描述您的病史"></textarea><br>
+
+    <label>您的家族成員是否有慢性病或重大疾病的病史？</label>
+    <label><input type="radio" name="familyHistory" value="yes"> 是</label>
+    <label><input type="radio" name="familyHistory" value="no"> 否</label><br>
+
+    <h2>生活習慣</h2>
+    <label>您每天的運動量如何？</label><br>
+    <label><input type="radio" name="exercise" value="moreThan30Minutes"> 每天運動30分鐘以上</label>
+    <label><input type="radio" name="exercise" value="occasionalExercise"> 偶爾運動</label>
+    <label><input type="radio" name="exercise" value="noExercise"> 完全不運動</label><br>
+
+    <label>您每週攝取蔬菜和水果的頻率如何？</label><br>
+    <label><input type="radio" name="fruitVeggieIntake" value="daily"> 每天</label>
+    <label><input type="radio" name="fruitVeggieIntake" value="severalTimesAWeek"> 每週幾次</label>
+    <label><input type="radio" name="fruitVeggieIntake" value="rarelyOrNever"> 很少/從不</label><br>
+
+    <label>您是否吸煙？</label>
+    <label><input type="radio" name="smoking" value="yes"> 是</label>
+    <label><input type="radio" name="smoking" value="no"> 否</label><br>
+
+    <label>您的飲酒習慣如何？</label><br>
+    <label><input type="radio" name="drinking" value="daily"> 每天</label>
+    <label><input type="radio" name="drinking" value="severalTimesAWeek"> 每週幾次</label>
+    <label><input type="radio" name="drinking" value="occasionally"> 偶爾</label>
+    <label><input type="radio" name="drinking" value="never"> 不喝酒</label><br>
+
+    <h2>心理健康狀況</h2>
+    <label>在過去兩週內，您有多常感到情緒低落或沮喪？</label><br>
+    <label><input type="radio" name="depression" value="never"> 從不</label>
+    <label><input type="radio" name="depression" value="occasionally"> 偶爾</label>
+    <label><input type="radio" name="depression" value="sometimes"> 有時</label>
+    <label><input type="radio" name="depression" value="frequently"> 經常</label>
+    <label><input type="radio" name="depression" value="always"> 總是</label><br>
+
+    <label>您最近是否感到過度焦慮或無法放鬆？</label><br>
+    <label><input type="radio" name="anxiety" value="never"> 從不</label>
+    <label><input type="radio" name="anxiety" value="occasionally"> 偶爾</label>
+    <label><input type="radio" name="anxiety" value="sometimes"> 有時</label>
+    <label><input type="radio" name="anxiety" value="frequently"> 經常</label>
+    <label><input type="radio" name="anxiety" value="always"> 總是</label><br>
+
+    <label>您最近是否有困難集中注意力或做決策？</label>
+    <label><input type="radio" name="focus" value="yes"> 是</label>
+    <label><input type="radio" name="focus" value="no"> 否</label><br>
+
+    <h2>其他問題</h2>
+    <label>您是否對任何食物或藥物過敏？</label>
+    <label><input type="radio" name="foodDrugAllergy" value="yes"> 是</label>
+    <label><input type="radio" name="foodDrugAllergy" value="no"> 否</label><br>
+    <label>您是否正在服用任何藥物或接受治療？</label>
+    <label><input type="radio" name="medication" value="yes"> 是</label>
+    <label><input type="radio" name="medication" value="no"> 否</label><br>
+
+    <h2>提交</h2>
+    <button type="button" id="submitBtn">提交</button>
+  </form>
+
+  <script>
+    document.getElementById('submitBtn').addEventListener('click', function () {
+      const form = document.getElementById('healthForm');
+
+      // 獲取所有表單數據並輸出
+      const formData = new FormData(form);
+      for (let [name, value] of formData.entries()) {
+        console.log(`${name}: ${value}`);
+      }
+    });
+  </script>
+</body>
+</html>
